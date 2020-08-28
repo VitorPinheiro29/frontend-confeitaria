@@ -1,0 +1,76 @@
+.card-recipe {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 320px;
+
+  text-decoration: none;
+  color: black;
+
+  cursor: pointer;
+
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+.card-recipe:hover {
+  width: 32%;
+  height: 340px;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.card-recipe .card-image {
+  display: flex;
+  width: 100%;
+
+  height: 60%;
+}
+.recipe-title {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 15%;
+  padding-left: 3%;
+
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card-recipe .card-image .size-card-image {
+  width: 100%;
+  height: 100%;
+}
+.recipe-title .favorite-recipe {
+  margin-right: 2%;
+  margin-top: 1%;
+}
+
+.favorite-recipe:hover {
+  color: red;
+  fill: red;
+}
+.card-recipe .card-description {
+  font-family: Ubuntu;
+  font-size: 16px;
+
+  padding-left: 3%;
+  width: 100%;
+  height: 15%;
+}
+
+.card-recipe .card-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 3%;
+  padding-left: 3%;
+
+  font-family: Ubuntu;
+  font-size: 14px;
+}

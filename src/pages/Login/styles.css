@@ -1,0 +1,68 @@
+.logon-container {
+  /* background-image: url('../../assets/background.jpg');*/
+  width: 100%;
+  max-width: 1300px;
+  height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  border: 1px solid black;
+}
+
+.logon-container .form {
+  display: flex;
+  flex-direction: column;
+
+  background-color: aqua;
+
+  border-radius: 2px;
+
+  width: 600px;
+  height: 50%;
+
+  position: relative;
+  margin-top: 15%;
+  margin-left: 5%;
+
+  padding: 10px;
+
+  font-family: Oswald, sans-serif;
+}
+
+.btn.transparent {
+  margin: 0;
+
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.logon-container .form input {
+  display: flex;
+
+  width: 300px;
+  height: 23%;
+
+  border-radius: 8px;
+
+  margin-top: 10px;
+}
+
+.logon-container .form button {
+  position: relative;
+  width: 300px;
+  height: 20%;
+
+  margin-top: 20px;
+
+  border-radius: 8px;
+}
+
+.logon-container .form .back-link {
+  position: absolute;
+
+  top: 230px;
+  left: 100px;
+}

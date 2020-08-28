@@ -1,0 +1,331 @@
+#page-home {
+  height: 100vh;
+  border: 1px solid black;
+  position: relative;
+
+  overflow-x: hidden;
+}
+
+#page-home .optionsBar {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  background-color: #00bfff;
+}
+
+#page-home .optionsBar ul {
+  display: flex;
+
+  width: 50%;
+
+  margin-left: 24%;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#page-home .optionsBar ul li {
+  display: flex;
+
+  width: 25%;
+  text-align: center;
+  position: relative;
+
+  font-weight: bold;
+  font-size: 20px;
+
+  margin-top: 2%;
+}
+
+#page-home .optionsBar ul li .recipeIcon {
+  position: absolute;
+  left: 55%;
+  top: 10%;
+}
+
+#page-home .optionsBar ul li .cakeIcon {
+  position: absolute;
+  left: 78%;
+  top: 10%;
+}
+
+#page-home .optionsBar ul li .favoriteIcon {
+  position: absolute;
+  left: 90%;
+  top: 10%;
+}
+
+#page-home .optionsBar ul .favoriteTitle {
+  padding-left: 7%;
+}
+
+#page-home .optionsBar ul .communityTitle {
+  padding-left: 8%;
+}
+
+#page-home .optionsBar ul li .communityIcon {
+  position: absolute;
+  left: 95%;
+  top: 10%;
+}
+
+#page-home .navbar .myAccount {
+  display: flex block;
+  background-color: #00bfff;
+
+  width: 22%;
+  height: 50px;
+
+  text-align: center;
+
+  border: 3px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#page-home .navbar .myAccount .userIcon {
+  display: inline-block;
+  margin-top: -9%;
+}
+
+#page-home .navbar .myAccount .loginAccount {
+  display: inline-block;
+  margin-top: 4%;
+  margin-left: 3%;
+
+  font-family: Ubuntu;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#page-home .thumb-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: #b0c4de;
+  width: 100%;
+  height: 370px;
+  position: relative;
+}
+
+#page-home .thumb-content .thumb-texts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-home .thumb-content .thumb-texts .text-thumb {
+  display: flex;
+  position: relative;
+
+  width: 90%;
+  height: 162px;
+
+  margin-left: 10%;
+  margin-top: 28px;
+
+  border: 5px solid darkslategray;
+  border-radius: 6px;
+}
+
+#page-home .thumb-content .thumb-texts .text-thumb2 {
+  display: block;
+  position: relative;
+  width: 90%;
+  height: 162px;
+  margin-left: 10%;
+  margin-top: 27px;
+  border: 5px solid darkslategray;
+  border-radius: 6px;
+}
+
+#page-home .thumb-content .thumb-texts .text-thumb .welcome {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#page-home .thumb-content .thumb-texts .text-thumb .welcome-subtitle {
+  position: absolute;
+  top: 70px;
+  left: 17%;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+#page-home .thumb-content .thumb-texts .text-thumb2 .welcome {
+  position: absolute;
+  top: 20px;
+  left: 36%;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#page-home .thumb-content .thumb-texts .text-thumb2 .welcome-subtitle {
+  position: absolute;
+  top: 70px;
+  left: 46%;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+#page-home .thumb-content .thumb-texts .text-thumb .image-welcome {
+  position: absolute;
+  top: 5px;
+  left: 70%;
+  width: 165px;
+}
+
+#page-home .thumb-content .thumb-texts .text-thumb2 .image-welcome {
+  position: absolute;
+  top: 15px;
+  left: 2%;
+  width: 190px;
+}
+
+#page-home .thumb-content .carousel-container {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+
+#page-home .thumb-content .carouselPosition {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 5%;
+  top: 7%;
+}
+
+#page-home .thumb-content .carouselSlider {
+  border: 3px solid darkslategray;
+  border-radius: 8px;
+}
+
+#page-home .recipes-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  height: 735px;
+
+  margin-left: 10%;
+  margin-top: -7%;
+  margin-bottom: 10%;
+}
+
+#page-home .recipes-container .title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#page-home .recipes-container .title-container .title-style {
+  font-family: Ubuntu;
+  font-size: 45px;
+  margin-left: 30%;
+}
+
+/*#page-home .recipes-container .title-container .search-container{ 
+    display: flex;
+    flex-direction: row;
+
+    width: 23%;
+    height: 80%;
+
+    position: relative;
+    margin-top: 0.75%;
+    margin-right: 5%;
+
+    border: 1px solid black;
+}
+
+#page-home .recipes-container .title-container .search-container .search-bar{
+    display: flex;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #5F9EA0;
+    color: black;
+
+    font-weight: bold;
+    text-align: center;
+
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0.2, 0.2);
+}
+
+#page-home .recipes-container .title-container  .search-container .search-icon {
+    position: absolute;
+
+    left: 2%;
+    top: 10%;
+}
+*/
+
+#page-home .recipes-container .title-container .post-container {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  margin-top: 0.3%;
+
+  width: 20%;
+  height: 90%;
+
+  padding-left: 1%;
+
+  border: 2px solid darkslategray;
+  border-radius: 10px;
+  background-color: #5f9ea0;
+}
+
+#page-home .recipes-container .title-container .post-container:hover {
+  opacity: 0.9;
+  background-color: #588485;
+}
+
+#page-home .recipes-container .title-container .post-container .post-recipe {
+  position: absolute;
+
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+  text-decoration: none;
+
+  top: 15%;
+
+  border-radius: 5px;
+}
+
+#page-home .recipes-container .title-container .post-container .pencilIcon {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+}
+
+#page-home .recipes-container .grid-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-top: 2%;
+  margin-bottom: 3%;
+}

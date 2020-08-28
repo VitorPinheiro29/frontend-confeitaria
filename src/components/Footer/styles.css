@@ -1,0 +1,136 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+
+  bottom: 0;
+
+  background-color: #00bfff;
+}
+
+.footer-container .all-rights {
+  display: flex;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+  padding: 1%;
+
+  background-color: darkslategray;
+}
+
+.footer-container .details {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container .details .about {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2%;
+}
+
+.footer-container .footer-title {
+  font-family: Alata;
+  color: black;
+  text-align: center;
+
+  margin-top: 2%;
+}
+
+.footer-container .footer-description {
+  font-size: 1.5rem;
+  font-family: Alata;
+  color: black;
+  text-align: center;
+}
+
+.footer-container .details .about .title-developers {
+  font-size: 2rem;
+  color: black;
+  font-family: Alata;
+}
+
+.footer-container .details .about .developer-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-container .details .about .developer-item + .developer-item {
+  margin-top: 3%;
+}
+
+.footer-container .details .about .developer-item .image-profile {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.footer-container .details .about .developer-item .developer-description {
+  display: flex;
+  margin-left: 2%;
+  width: 100%;
+
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer-container
+  .details
+  .about
+  .developer-item
+  .developers-medias
+  .social-item {
+  margin-left: 2%;
+}
+
+.footer-container .details .social-medias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  padding: 2%;
+}
+
+.footer-container .details .social-medias .title-medias {
+  margin-bottom: 5%;
+
+  font-size: 1.75rem;
+  color: black;
+  font-family: Alata;
+  font-style: inherit;
+}
+
+.footer-container .details .social-medias .subtitle-medias {
+  margin-top: 1%;
+  margin-bottom: 5%;
+
+  font-size: 1rem;
+  color: black;
+  font-family: Alata;
+  font-style: inherit;
+}
+.footer-container .details .social-medias .social-item {
+  list-style-type: none;
+}
+
+.footer-container .details .social-medias .social-item + .social-item {
+  margin-top: 30%;
+}
+
+.footer-container .details .footer-image-container {
+  width: 25%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container .details .footer-image-container .footer-image-size {
+  width: 100%;
+  margin-top: 25%;
+}

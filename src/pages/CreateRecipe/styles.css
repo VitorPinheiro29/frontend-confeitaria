@@ -1,0 +1,194 @@
+#create-recipe {
+  height: 100vh;
+  border: 1px solid black;
+  position: relative;
+
+  overflow-x: hidden;
+  background: #f0f0f5;
+}
+
+#create-recipe .form-container {
+  display: flex;
+  margin-top: -10%;
+  position: relative;
+
+  width: 100vw;
+
+  background: #f0f0f5;
+
+  margin-top: -2%;
+  margin-bottom: 5%;
+}
+
+#create-recipe .form-container .post-recipe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 55%;
+
+  text-align: center;
+
+  background: white;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+#create-recipe .form-container .post-recipe-container .bg-title {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+#create-recipe .form-container .post-recipe-container .bg-title .title {
+  font-weight: bold;
+  font-size: 45px;
+  margin-left: 10%;
+}
+
+#create-recipe .form-container .post-recipe-container .grid-one {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  border-left: none;
+
+  padding: 5%;
+  padding-top: 2%;
+}
+
+#create-recipe
+  .form-container
+  .post-recipe-container
+  .grid-one
+  .title-input-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 65%;
+  height: 105px;
+
+  margin-bottom: 3%;
+  margin-left: 15%;
+}
+
+#create-recipe
+  .form-container
+  .post-recipe-container
+  .grid-one
+  .title-input-container
+  .title-style {
+  font-size: 28px;
+  text-align: left;
+  font-family: Ubuntu;
+}
+
+#create-recipe
+  .form-container
+  .post-recipe-container
+  .grid-one
+  .title-input-container
+  .input-title-recipe {
+  width: 100%;
+  height: 100%;
+
+  background-color: #f0f0f5;
+  padding-left: 2%;
+
+  font-family: Ubuntu;
+  border: 2px solid darkslategray;
+  border-radius: 5px;
+}
+
+#create-recipe
+  .form-container
+  .post-recipe-container
+  .grid-one
+  .dropzone-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 65%;
+  height: 100%;
+
+  margin-bottom: 3%;
+  margin-left: 15%;
+}
+
+#create-recipe
+  .form-container
+  .post-recipe-container
+  .grid-one
+  .dropzone-container
+  .dropzone-title-style {
+  font-size: 28px;
+  text-align: left;
+  font-family: Ubuntu;
+}
+
+#create-recipe
+  .form-container
+  .post-recipe-container
+  .grid-one
+  .ingredient-input-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 65%;
+  height: 200px;
+
+  margin-bottom: 3%;
+  margin-left: 15%;
+}
+
+#create-recipe
+  .form-container
+  .post-recipe-container
+  .grid-one
+  .ingredient-input-container
+  .title-style {
+  font-size: 28px;
+  text-align: left;
+  font-family: Ubuntu;
+}
+
+#create-recipe
+  .form-container
+  .post-recipe-container
+  .grid-one
+  .ingredient-input-container
+  .input-ingredient {
+  width: 100%;
+  height: 100%;
+
+  background-color: #f0f0f5;
+  padding-left: 2%;
+
+  font-family: Ubuntu;
+  border: 2px solid darkslategray;
+  border-radius: 5px;
+}
+
+#create-recipe .form-container .post-recipe-container .bg-button-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 55px;
+}
+
+#create-recipe
+  .form-container
+  .post-recipe-container
+  .bg-button-container
+  button {
+  width: 75%;
+  height: 100%;
+
+  border-radius: 5px;
+  border: 2px solid darkslategray;
+  background-color: #00bfff;
+
+  font-weight: bold;
+  font-family: Ubuntu;
+  margin-left: 10%;
+}
