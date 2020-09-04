@@ -41,7 +41,12 @@ const Home = () => {
       <div className="optionsBar">
         <ul>
           <li>
-            Receitas
+            <Link
+              to="/recipe-details"
+              style={{ textDecoration: 'none', color: 'black' }}
+            >
+              Receitas
+            </Link>
             <FcViewDetails size={24} className="recipeIcon" />
           </li>
           <li>
