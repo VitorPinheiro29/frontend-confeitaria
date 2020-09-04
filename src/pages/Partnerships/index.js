@@ -14,7 +14,7 @@ import './styles.css';
 function Partnerships() {
   const userName = localStorage.getItem('userName');
   return (
-    <div>
+    <div className="hidden-scroll">
       <NavBar children={userName} />
       <section id="partnerships-container">
         <div className="card-container">

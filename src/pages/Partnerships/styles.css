@@ -1,7 +1,10 @@
+.hidden-scroll {
+  overflow-x: hidden;
+}
+
 #partnerships-container {
   height: 100%;
 
-  overflow-x: hidden;
   padding: 5%;
   background: #f0f0f5;
 }
@@ -32,7 +35,6 @@
   justify-content: center;
   background-color: #dc8420;
   width: 60%;
-  padding-right: 10%;
 }
 
 #partnerships-container .card-container .logo-container-bruno {
