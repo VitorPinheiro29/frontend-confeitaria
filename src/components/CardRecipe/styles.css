@@ -96,4 +96,17 @@
   .card-recipe:hover {
     border: 2px solid black;
   }
+
+  .card-recipe .recipe-title {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 15%;
+    padding-left: 3%;
+
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 20px;
+  }
 }

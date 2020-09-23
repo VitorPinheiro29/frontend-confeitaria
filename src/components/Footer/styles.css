@@ -169,6 +169,10 @@
     font-family: Alata;
   }
 
+  .footer-container .details .about .developer-item .developer-description {
+    font-size: 1.2rem;
+  }
+
   .footer-container .details .social-medias {
     display: flex;
     flex-direction: column;
@@ -203,5 +207,9 @@
 
   .footer-container .details .footer-image-container {
     display: none;
+  }
+
+  .footer-container .details .social-medias .subtitle-medias {
+    font-size: 0.8rem;
   }
 }
