@@ -1,24 +1,20 @@
 import React from 'react';
-import { MdSearch } from 'react-icons/md';
-import { FiUser } from 'react-icons/fi';
 import { FcViewDetails } from 'react-icons/fc';
 import { GiCakeSlice } from 'react-icons/gi';
 import { BsStarFill, BsPencil } from 'react-icons/bs';
 import { FaUserFriends } from 'react-icons/fa';
-import { AiFillHeart } from 'react-icons/ai';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Dropdown from 'react-bootstrap/Dropdown';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Button from 'react-bootstrap/Button';
 
 import Carousel from 'react-bootstrap/Carousel';
 
-import api from '../../services/api';
-
 import './styles.css';
-import rocambole from '../../assets/rocambole.webp';
 
 import cookie from '../../assets/cookie.svg';
 import available from '../../assets/available.svg';
 import wave from '../../assets/wave1.svg';
-import logo from '../../assets/logo.png';
 import slide1 from '../../assets/slide1.jpg';
 import slide2 from '../../assets/slide2.jpg';
 import slide3 from '../../assets/slide3.jpg';
@@ -33,6 +29,17 @@ import CardRecipe from '../../components/CardRecipe';
 
 const Home = () => {
   const userName = localStorage.getItem('userName');
+
+  const menuBtn = document.querySelector('menu-btn');
+  let menuOpen = false;
+
+  function openCloseMenu() {
+    if (!menuOpen) {
+      menuOpen = true;
+    } else {
+      menuOpen = false;
+    }
+  }
 
   return (
     <div id="page-home">
@@ -69,32 +76,37 @@ const Home = () => {
         </ul>
       </div>
 
+      <div className="menu-bar">
+        <Dropdown className="button-style">
+          <Dropdown.Toggle id="dropdown-basic" className="toggle-button">
+            Menu
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1" className="menu-dropdown">
+              Receitas <FcViewDetails size={24} className="recipeIcon" />
+            </Dropdown.Item>
+            <Dropdown.Item href="#/action-2">
+              Confeiteiros{' '}
+              <GiCakeSlice size={24} color="red" className="cakeIcon" />
+            </Dropdown.Item>
+            <Dropdown.Item href="#/action-3">
+              Favoritos{' '}
+              <BsStarFill size={24} color="yellow" className="favoriteIcon" />
+            </Dropdown.Item>
+            <Dropdown.Item href="#/action-3">
+              Parcerias{' '}
+              <FaUserFriends
+                size={24}
+                color="green"
+                className="communityIcon"
+              />
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      </div>
+
       <div className="thumb-content">
-        <div className="thumb-texts">
-          <div className="text-thumb">
-            <img
-              src={cookie}
-              className="image-welcome"
-              alt="Menina abraçada com um cookie"
-            />
-            <p className="welcome">Mergulhe nesse doce universo</p>
-            <p className="welcome-subtitle">
-              Tudo como você <strong>nunca viu!</strong>
-            </p>
-            {/*<img src={stars} /> */}
-          </div>
-
-          <div className="text-thumb2">
-            <img
-              src={available}
-              className="image-welcome"
-              alt="Pessoas escolhendo receitas"
-            />
-            <p className="welcome">Veja e avalie as melhores receitas</p>
-            <p className="welcome-subtitle">A vida nunca foi tão doce!</p>
-          </div>
-        </div>
-
         <div className="carousel-container">
           <div className="carouselPosition">
             <Carousel>
@@ -122,9 +134,33 @@ const Home = () => {
             </Carousel>
           </div>
         </div>
+        <div className="thumb-texts">
+          <div className="text-thumb">
+            <img
+              src={cookie}
+              className="image-welcome"
+              alt="Menina abraçada com um cookie"
+            />
+            <p className="welcome">Mergulhe nesse doce universo</p>
+            <p className="welcome-subtitle">
+              Tudo como você <strong>nunca viu!</strong>
+            </p>
+            {/*<img src={stars} /> */}
+          </div>
+
+          <div className="text-thumb2">
+            <img
+              src={available}
+              className="image-welcome"
+              alt="Pessoas escolhendo receitas"
+            />
+            <p className="welcome">Veja e avalie as melhores receitas</p>
+            <p className="welcome-subtitle">A vida nunca foi tão doce!</p>
+          </div>
+        </div>
       </div>
       <div>
-        <img src={wave} alt="Efeito de ondas" />
+        <img src={wave} alt="Efeito de ondas" className="wave-size" />
       </div>
 
       {/**Contâiner das receitas */}

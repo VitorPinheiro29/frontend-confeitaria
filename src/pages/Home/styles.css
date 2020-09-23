@@ -1,6 +1,5 @@
 #page-home {
-  height: 100vh;
-  border: 1px solid black;
+  height: 100%;
   position: relative;
 
   overflow-x: hidden;
@@ -71,36 +70,15 @@
   top: 10%;
 }
 
-#page-home .navbar .myAccount {
-  display: flex block;
-  background-color: #00bfff;
-
-  width: 22%;
-  height: 50px;
-
-  text-align: center;
-
-  border: 3px solid black;
-  border-radius: 8px;
-  box-sizing: border-box;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+#page-home .menu-bar {
+  display: none;
+  justify-content: center;
 }
 
-#page-home .navbar .myAccount .userIcon {
-  display: inline-block;
-  margin-top: -9%;
-}
-
-#page-home .navbar .myAccount .loginAccount {
-  display: inline-block;
-  margin-top: 4%;
-  margin-left: 3%;
-
-  font-family: Ubuntu;
-  font-size: 25px;
+#page-home .menu-bar .button-style {
   color: black;
-  font-weight: bold;
-  text-decoration: none;
+  font-style: Ubuntu;
+  width: 100%;
 }
 
 #page-home .thumb-content {
@@ -127,7 +105,7 @@
   width: 90%;
   height: 162px;
 
-  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 28px;
 
   border: 5px solid darkslategray;
@@ -139,7 +117,7 @@
   position: relative;
   width: 90%;
   height: 162px;
-  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 27px;
   border: 5px solid darkslategray;
   border-radius: 6px;
@@ -237,47 +215,6 @@
   font-size: 45px;
   margin-left: 30%;
 }
-
-/*#page-home .recipes-container .title-container .search-container{ 
-    display: flex;
-    flex-direction: row;
-
-    width: 23%;
-    height: 80%;
-
-    position: relative;
-    margin-top: 0.75%;
-    margin-right: 5%;
-
-    border: 1px solid black;
-}
-
-#page-home .recipes-container .title-container .search-container .search-bar{
-    display: flex;
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: #5F9EA0;
-    color: black;
-
-    font-weight: bold;
-    text-align: center;
-
-    border-radius: 6px;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0.2, 0.2);
-}
-
-#page-home .recipes-container .title-container  .search-container .search-icon {
-    position: absolute;
-
-    left: 2%;
-    top: 10%;
-}
-*/
-
 #page-home .recipes-container .title-container .post-container {
   display: flex;
   flex-direction: row;
@@ -328,4 +265,134 @@
 
   margin-top: 2%;
   margin-bottom: 3%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  #page-home .thumb-content {
+    width: 100%;
+    height: 380px;
+  }
+
+  #page-home .thumb-content .thumb-texts {
+    display: none;
+  }
+
+  #page-home .thumb-content .carousel-container {
+    width: 100%;
+    height: 400px;
+  }
+
+  #page-home .thumb-content .carouselPosition {
+    left: 0%;
+    top: 0%;
+  }
+
+  #page-home .thumb-content .carouselSlider {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 350px;
+  }
+
+  .wave-size {
+    margin-top: -5px;
+    height: 150px;
+  }
+
+  #page-home .optionsBar {
+    display: none;
+  }
+
+  #page-home .menu-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00bfff;
+  }
+
+  #page-home .menu-bar .button-style {
+    width: 30%;
+  }
+
+  #page-home .menu-bar .toggle-button {
+    border-radius: 8px;
+    color: black;
+    font-style: Ubuntu;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  #page-home .recipes-container {
+    display: flex;
+    justify-content: center;
+
+    width: 90%;
+    height: 100%;
+
+    margin-left: 5%;
+    margin-top: -15%;
+    margin-bottom: 10%;
+  }
+
+  #page-home .recipes-container .title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #page-home .recipes-container .title-container .title-style {
+    font-family: Ubuntu;
+    font-size: 35px;
+    margin-left: 0%;
+  }
+  #page-home .recipes-container .title-container .post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 0%;
+
+    width: 40%;
+    height: 30px;
+    border: 1px solid black;
+
+    border: 2px solid darkslategray;
+    border-radius: 5px;
+    background-color: #5f9ea0;
+  }
+
+  #page-home .recipes-container .title-container .post-container:hover {
+    opacity: 0.9;
+    background-color: #588485;
+  }
+
+  #page-home .recipes-container .title-container .post-container .post-recipe {
+    position: absolute;
+    align-items: center;
+    vertical-align: middle;
+    top: 0%;
+
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+
+    border-radius: 5px;
+  }
+
+  #page-home .recipes-container .title-container .post-container .pencilIcon {
+    display: none;
+  }
+
+  #page-home .recipes-container .grid-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
 }

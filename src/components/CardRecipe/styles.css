@@ -28,7 +28,7 @@
 
   height: 60%;
 }
-.recipe-title {
+.card-recipe .recipe-title {
   display: flex;
   justify-content: space-between;
 
@@ -38,7 +38,7 @@
 
   font-family: Oswald;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .card-recipe .card-image .size-card-image {
@@ -73,4 +73,27 @@
 
   font-family: Ubuntu;
   font-size: 14px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .card-recipe {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 320px;
+
+    text-decoration: none;
+    color: black;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+    border: 2px solid black;
+  }
+  .card-recipe + .card-recipe {
+    margin-top: 5%;
+  }
+  .card-recipe:hover {
+    border: 2px solid black;
+  }
 }

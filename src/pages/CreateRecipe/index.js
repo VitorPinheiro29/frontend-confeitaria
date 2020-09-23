@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { uniqueId } from 'lodash';
 import filesize from 'filesize';
 import api from '../../services/api.js';
 
 import './styles.css';
-
-import writeRecipe from '../../assets/write-recipe.svg';
 
 import Upload from '../../components/Uploads';
 import NavBar from '../../components/NavBar';

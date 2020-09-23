@@ -1,6 +1,7 @@
 .footer-container {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   width: 100vw;
 
@@ -133,4 +134,74 @@
 .footer-container .details .footer-image-container .footer-image-size {
   width: 100%;
   margin-top: 25%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .footer-container .all-rights {
+    display: flex;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: black;
+    padding: 1%;
+
+    background-color: darkslategray;
+  }
+
+  .footer-container .details {
+    flex-direction: column;
+  }
+
+  .footer-container .details .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .footer-container .details .about .title-developers {
+    text-align: center;
+
+    font-size: 1.75rem;
+    color: black;
+    font-family: Alata;
+  }
+
+  .footer-container .details .social-medias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .footer-container .details .social-medias .title-medias {
+    margin-bottom: 3%;
+
+    font-size: 1.75rem;
+    color: black;
+    font-family: Alata;
+    font-style: inherit;
+  }
+
+  .footer-container .details .social-medias ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+
+    width: 40%;
+  }
+
+  .footer-container .details .social-medias .social-item + .social-item {
+    margin-top: 0%;
+  }
+
+  .footer-container .details .footer-image-container {
+    display: none;
+  }
 }

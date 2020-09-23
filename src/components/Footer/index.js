@@ -55,7 +55,11 @@ const Footer = () => {
           </li>
         </div>
         <div className="footer-image-container">
-          <img src={footerImg} className="footer-image-size" />
+          <img
+            src={footerImg}
+            className="footer-image-size"
+            alt="Imagem do footer"
+          />
         </div>
         <div className="social-medias">
           <span className="title-medias">Nossas redes</span>

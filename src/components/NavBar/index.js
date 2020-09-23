@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { MdSearch } from 'react-icons/md';
 import { FiUser } from 'react-icons/fi';
 
@@ -14,7 +14,7 @@ const NavBar = ({ children }) => {
         <div className="title">
           <img src={logo} className="title-logo" alt="Logo Doce Açucarado" />
         </div>
-        <div className="search-bar-container">
+        <div className="search-bar-large-container">
           <input
             placeholder="Pesquisar receita..."
             className="search-bar"
@@ -31,6 +31,17 @@ const NavBar = ({ children }) => {
           </Link>
         </div>
       </nav>
+      <div className="small-bar-container">
+        <div className="search-bar-small-container">
+          <input
+            placeholder="Pesquisar receita..."
+            className="search-bar"
+          ></input>
+          <button className="search-icon">
+            <MdSearch size={40} color="black" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

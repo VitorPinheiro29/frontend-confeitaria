@@ -1,5 +1,4 @@
 import React from 'react';
-import GlobalStyle from './assets/styles/global';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Routes from './routes';
