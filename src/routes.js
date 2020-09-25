@@ -15,8 +15,8 @@ const Routes = () => {
       <Route component={Login} path="/login" />
       <Route component={Register} path="/register"></Route>
       <Route component={CreateRecipe} path="/register-recipe"></Route>
-      <Route component={RecipeDetails} path="/recipe-details"></Route>
-      <Route component={Partnerships} path="/partnerships"></Route>
+      <Route component={RecipeDetails} path="/receitas"></Route>
+      <Route component={Partnerships} path="/parcerias"></Route>
     </BrowserRouter>
   );
 };

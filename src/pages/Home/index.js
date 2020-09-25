@@ -4,9 +4,7 @@ import { GiCakeSlice } from 'react-icons/gi';
 import { BsStarFill, BsPencil } from 'react-icons/bs';
 import { FaUserFriends } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import Dropdown from 'react-bootstrap/Dropdown';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import Button from 'react-bootstrap/Button';
+
 
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -22,6 +20,7 @@ import slide3 from '../../assets/slide3.jpg';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import CardRecipe from '../../components/CardRecipe';
+import MenuDropdown from '../../components/MenuDropdown';
 // eslint-disable-next-line no-lone-blocks
 {
   /*import stars from '../../assets/stars.png' */
@@ -76,35 +75,7 @@ const Home = () => {
         </ul>
       </div>
 
-      <div className="menu-bar">
-        <Dropdown className="button-style">
-          <Dropdown.Toggle id="dropdown-basic" className="toggle-button">
-            Menu
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1" className="menu-dropdown">
-              Receitas <FcViewDetails size={24} className="recipeIcon" />
-            </Dropdown.Item>
-            <Dropdown.Item href="#/action-2">
-              Confeiteiros{' '}
-              <GiCakeSlice size={24} color="red" className="cakeIcon" />
-            </Dropdown.Item>
-            <Dropdown.Item href="#/action-3">
-              Favoritos{' '}
-              <BsStarFill size={24} color="yellow" className="favoriteIcon" />
-            </Dropdown.Item>
-            <Dropdown.Item href="#/action-3">
-              Parcerias{' '}
-              <FaUserFriends
-                size={24}
-                color="green"
-                className="communityIcon"
-              />
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-      </div>
+      <MenuDropdown />
 
       <div className="thumb-content">
         <div className="carousel-container">

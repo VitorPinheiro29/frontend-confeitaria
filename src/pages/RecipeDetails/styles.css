@@ -123,3 +123,92 @@
   width: 30%;
   margin-left: 1%;
 }
+
+@media (max-width: 700px) {
+  .title-container {
+    margin-top: 5%;
+    font-size: 1.6rem;
+  }
+  .recipes-container {
+    margin-top: 5%;
+  }
+  
+  .recipes-container + .recipes-container {
+    margin-top: 10%;
+  }
+  
+  .card-recipe-details {
+    width: 80%;
+    height: 350px;
+  
+    text-decoration: none;
+    color: black;
+  }
+  
+  .card-recipe-details:hover {
+    width: 80%;
+    height: 350px;
+    opacity: 0.9;
+  }
+  
+  .card-recipe-details .card-image {
+    display: flex;
+    width: 100%;
+  
+    height: 75%;
+  }
+  .recipe-title {
+    padding-left: 3%;
+    height: 12%;
+    font-size: 1.5rem;
+  }
+  
+  .recipe-title .favorite-recipe {
+    margin-right: 3%;
+    margin-top: -3%;
+    width: 30px;
+  }
+
+  .card-recipe-details .card-description {
+    font-family: Ubuntu;
+    font-size: 1.1rem;
+  
+    padding-left: 3%;
+    width: 100%;
+    height: 20%;
+  }
+  
+  .card-recipe-details .card-detail {
+    font-family: Ubuntu;
+    font-size: 1rem;
+    align-items: center;
+    vertical-align: center;
+    padding-right: 3%;
+  }
+  
+  .card-recipe-details .card-detail .rating-recipe {
+    display: flex;
+    flex-direction: row;
+    font-family: Ubuntu;
+  
+    padding-left: 3%;
+    width: 60%;
+  
+    align-items: center;
+    vertical-align: center;
+  }
+  
+  .card-recipe-details .card-detail .rating-recipe .title-rating {
+    font-size: 1rem;
+    margin-top: 4%;
+  }
+  
+  .card-recipe-details .card-detail .rating-recipe .size-stars {
+    width: 40%;
+    margin-left: 1%;
+  }
+
+  .card-recipe-details .card-detail span {
+    font-size: 0.8rem;
+  }
+}

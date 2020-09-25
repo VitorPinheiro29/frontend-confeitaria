@@ -4,6 +4,7 @@ import './styles.css';
 
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
+import MenuDropdown from '../../components/MenuDropdown';
 
 import miniChurros from '../../assets/mini-churros.webp';
 import pudimCopo from '../../assets/pudim-copo.jpg';
@@ -17,6 +18,7 @@ const RecipeDetails = () => {
   return (
     <div id="page-recipes">
       <NavBar children={userName} />
+      <MenuDropdown />
       <h1 className="title-container">Confira todas as receitas</h1>
       <div className="recipes-container">
         <div className="card-recipe-details">

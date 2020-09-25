@@ -206,3 +206,149 @@
 .color-bruno {
   background-color: #b82828;
 }
+
+@media (max-width: 700px) {
+  
+  #partnerships-container .card-container {
+    display: flex;
+    flex-direction: column;
+  
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 5px;
+  }
+  
+  #partnerships-container .card-container + .card-container {
+    margin-top: 10%;
+  }
+  
+  #partnerships-container .card-container .logo-container-rafael {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+  }
+  
+  #partnerships-container .card-container .logo-container-molera {
+    display: flex;
+    justify-content: center;
+    background-color: #dc8420;
+    width: 100%;
+  }
+  
+  #partnerships-container .card-container .logo-container-bruno {
+    display: flex;
+    justify-content: center;
+    background-color: #b82828;
+    width: 100%;
+  }
+  
+  #partnerships-container .card-container .logo-container-negrini {
+    display: flex;
+    justify-content: center;
+    background-color: #722f37;
+    width: 100%;
+  }
+  
+  #partnerships-container .card-container .logo-container-rafael .image-rafael {
+    width: 100%;
+  }
+  
+  #partnerships-container .card-container .logo-container-bruno .image-bruno {
+    width: 60%;
+  }
+  
+  #partnerships-container .card-container .logo-container-molera .image-molera {
+    width: 50%;
+  }
+  
+  #partnerships-container .card-container .logo-container-negrini .image-negrini {
+    width: 90%;
+  }
+  
+  #partnerships-container .card-container .details-container {
+    width: 100%;
+  }
+  
+  #partnerships-container
+    .card-container
+    .details-container
+    .branch-container
+    .branch-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  #partnerships-container
+    .card-container
+    .details-container
+    .branch-container
+    .branch-content {
+    width: 35%;
+    height: 5%;
+    font-size: 0.7rem;
+    padding: 1.5%;
+    margin-top: 0%;
+  }
+  
+  #partnerships-container
+    .card-container
+    .details-container
+    .description-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    width: 100%;
+    font-family: Ubuntu;
+    padding: 2%;
+  }
+  
+  #partnerships-container
+    .card-container
+    .details-container
+    .description-container
+    .description-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  #partnerships-container
+    .card-container
+    .details-container
+    .description-container
+    .description-content {
+    font-size: 0.8rem;
+    margin-left: 2%;
+  }
+  
+  #partnerships-container
+    .card-container
+    .details-container
+    .notes-container
+    .notes-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  #partnerships-container
+    .card-container
+    .details-container
+    .notes-container
+    .notes-image {
+    width: 30%;
+    margin-left: 1%;
+    margin-bottom: 3%;
+  }
+  
+  #partnerships-container .card-container .details-container button {
+    width: 40%;
+    margin-left: 30%;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: white;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}
