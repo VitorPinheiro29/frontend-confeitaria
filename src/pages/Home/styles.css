@@ -7,30 +7,27 @@
 
 #page-home .optionsBar {
   display: flex;
+  flex-direction: row;
   width: 100%;
-  position: relative;
 
   background-color: #00bfff;
 }
 
 #page-home .optionsBar ul {
   display: flex;
-
-  width: 50%;
-
-  margin-left: 24%;
-
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
+  
+  width: 50%;
+  margin-left: 25%;
 }
 
 #page-home .optionsBar ul li {
   display: flex;
+  justify-content: space-between;
 
   width: 25%;
   text-align: center;
-  position: relative;
 
   font-weight: bold;
   font-size: 20px;
@@ -38,36 +35,63 @@
   margin-top: 2%;
 }
 
+#page-home .optionsBar ul .recipeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 67%;
+}
+
+#page-home .optionsBar ul .recipeContainer:hover {
+  opacity: 0.7;
+}
+
 #page-home .optionsBar ul li .recipeIcon {
-  position: absolute;
-  left: 55%;
-  top: 10%;
+margin-top: 4%;
 }
 
-#page-home .optionsBar ul li .cakeIcon {
-  position: absolute;
-  left: 78%;
-  top: 10%;
+#page-home .optionsBar ul .favoriteContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
 }
 
-#page-home .optionsBar ul li .favoriteIcon {
-  position: absolute;
-  left: 90%;
-  top: 10%;
+#page-home .optionsBar ul .favoriteContainer:hover {
+  opacity: 0.7;
 }
 
-#page-home .optionsBar ul .favoriteTitle {
-  padding-left: 7%;
+#page-home .optionsBar ul .communityContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 73%;
 }
 
-#page-home .optionsBar ul .communityTitle {
-  padding-left: 8%;
+#page-home .optionsBar ul .communityContainer:hover {
+  opacity: 0.7;
 }
 
-#page-home .optionsBar ul li .communityIcon {
-  position: absolute;
-  left: 95%;
-  top: 10%;
+#page-home .optionsBar ul .communityContainer .communityIcon{ 
+  margin-top: 4%;
+}
+
+#page-home .optionsBar .language-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+  align-items: center;
+  width: 25%;
+}
+
+#page-home .optionsBar .language-container a {
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+
+#page-home .optionsBar .language-container a + a{
+  margin-top: 2%;
 }
 
 #page-home .menu-bar {
@@ -247,8 +271,11 @@
 
   top: 15%;
 
+  width: 70%;
+
   border-radius: 5px;
 }
+
 
 #page-home .recipes-container .title-container .post-container .pencilIcon {
   position: absolute;
@@ -266,6 +293,52 @@
   margin-top: 2%;
   margin-bottom: 3%;
 }
+
+a {
+  width: 40px;
+  height: 25px;
+}
+
+.brazil-flag-size {
+  width: 40px;
+  height: 36px;
+}
+
+.brazil-flag-size.active {
+  padding: 2px;
+  background-color: #b0c4de;
+}
+
+
+.usa-flag-size {
+  width: 40px;
+  height: 25px;
+}
+
+.select-container {
+  width: 200px;
+}
+
+.option-select-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.option-select-container img{
+  margin-right: 5px;
+}
+
+.carousel-control-next-icon {
+  background-image: none !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: none !important;
+}
+
+/* select#gender option[value="en"]   { background-image:url(../../assets/usa-flag.jpg);   }
+select#gender option[value="pt"] { background-image:url(../../assets/brazil-flag.png); } */
 
 @media screen and (min-width: 300px) and (max-width: 700px) {
   #page-home .thumb-content {

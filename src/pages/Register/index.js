@@ -88,7 +88,7 @@ export default function Login() {
               class="btn transparent"
               id="sign-up-btn"
             >
-              Entrar
+              Entrar  
             </Link>
             <img src={backgroundRegister} class="image" alt="" />
           </div>

@@ -3,6 +3,8 @@ import { useHistory } from 'react-router-dom';
 import { uniqueId } from 'lodash';
 import filesize from 'filesize';
 import api from '../../services/api.js';
+import counterpart from "counterpart";
+import Translate from "react-translate-component";
 
 import './styles.css';
 
@@ -11,8 +13,17 @@ import NavBar from '../../components/NavBar';
 import FileList from '../../components/FileList';
 import Footer from '../../components/Footer';
 
+import pt from "../../utils/languages/pt";
+import en from "../../utils/languages/en";
+
+counterpart.registerTranslations("pt", pt);
+counterpart.registerTranslations("en", en);
+
+counterpart.setLocale("pt");
+
 const CreateRecipe = () => {
   const [uploadedFiles, setUploadedFiles] = useState([]);
+
 
   function handleUpload(files) {
     const zeFiles = files.map((file) => ({
@@ -28,8 +39,6 @@ const CreateRecipe = () => {
     }));
 
     setUploadedFiles(uploadedFiles.concat(zeFiles));
-
-    // zeFiles.forEach(processUpload);
   }
 
   /*function updateFile(id, data) {
@@ -97,12 +106,12 @@ const CreateRecipe = () => {
       <form onSubmit={postRecipe} className="form-container">
         <div className="post-recipe-container">
           <div className="bg-title">
-            <h1 className="title">Escreva sua receita</h1>
+            <h1 className="title"><Translate content="createRecipeTitle" /></h1>
           </div>
 
           <div className="grid-one">
             <div className="title-input-container">
-              <h1 className="title-style">Título</h1>
+              <h1 className="title-style"><Translate content="recipeTitle" /></h1>
               <input
                 placeholder="Título da receita"
                 value={title}
@@ -112,7 +121,7 @@ const CreateRecipe = () => {
             </div>
 
             <div className="title-input-container">
-              <h1 className="title-style">Descrição</h1>
+              <h1 className="title-style"><Translate content="recipeDescription" /></h1>
               <input
                 placeholder="Breve descrição da receita"
                 value={description}
@@ -121,13 +130,13 @@ const CreateRecipe = () => {
               />
             </div>
             <div className="dropzone-container">
-              <h1 className="dropzone-title-style">Imagem</h1>
+              <h1 className="dropzone-title-style"><Translate content="recipeImage" /></h1>
               <Upload onUpload={handleUpload} />
               {!!uploadedFiles.length && <FileList files={uploadedFiles} />}
             </div>
 
             <div className="ingredient-input-container">
-              <h1 className="title-style">Ingredientes</h1>
+              <h1 className="title-style"><Translate content="recipeIngredients" /></h1>
               <textarea
                 placeholder="Ingredientes da receita"
                 value={ingredients}
@@ -136,7 +145,7 @@ const CreateRecipe = () => {
               />
             </div>
             <div className="ingredient-input-container">
-              <h1 className="title-style">Modo de preparo</h1>
+              <h1 className="title-style"><Translate content="recipePrepare" /></h1>
               <textarea
                 placeholder="Modo de preparo"
                 value={preparation}
@@ -146,7 +155,7 @@ const CreateRecipe = () => {
             </div>
             <div className="bg-button-container">
               <button className="button" type="submit">
-                Enviar receita
+                <Translate content="sendRecipe" />
               </button>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { MdSearch } from 'react-icons/md';
 import { FiUser } from 'react-icons/fi';
@@ -6,6 +7,7 @@ import { FiUser } from 'react-icons/fi';
 import './styles.css';
 
 import logo from '../../assets/logo.png';
+
 
 const NavBar = ({ children }) => {
   return (

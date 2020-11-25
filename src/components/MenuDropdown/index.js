@@ -5,7 +5,7 @@ import './styles.css';
 
 import { FcViewDetails } from 'react-icons/fc';
 import { GiCakeSlice } from 'react-icons/gi';
-import { BsStarFill, BsPencil } from 'react-icons/bs';
+import { BsStarFill} from 'react-icons/bs';
 import { FaUserFriends } from 'react-icons/fa';
 
 

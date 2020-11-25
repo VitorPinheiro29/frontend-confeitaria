@@ -1,4 +1,6 @@
 import React from 'react';
+import counterpart from "counterpart";
+import Translate from "react-translate-component";
 import {
   FaFacebook,
   FaInstagram,
@@ -13,14 +15,22 @@ import lucasProfile from '../../assets/lucasProfile.jpeg';
 import vitorProfile from '../../assets/vitorProfile.jpeg';
 import footerImg from '../../assets/footer.svg';
 
+import pt from "../../utils/languages/pt";
+import en from "../../utils/languages/en";
+
+counterpart.registerTranslations("pt", pt);
+counterpart.registerTranslations("en", en);
+
+counterpart.setLocale("pt");
+
 const Footer = () => {
   return (
     <div className="footer-container">
       <h1 className="footer-title">Doce açucarado</h1>
-      <span className="footer-description">Um site para fins educacionais</span>
+      <span className="footer-description"><Translate content="footerSubtitle" /></span>
       <div className="details">
         <div className="about">
-          <p className="title-developers">Desenvolvedores</p>
+          <p className="title-developers"><Translate content="developer" /></p>
           <li className="developer-item">
             <img
               src={lucasProfile}
@@ -62,7 +72,7 @@ const Footer = () => {
           />
         </div>
         <div className="social-medias">
-          <span className="title-medias">Nossas redes</span>
+          <span className="title-medias"><Translate content="socialMediasTitle" /></span>
           <ul>
             <li className="social-item">
               <FaFacebook size={48} color="blue" />
@@ -76,12 +86,12 @@ const Footer = () => {
           </ul>
 
           <span className="subtitle-medias">
-            Curta nossos conteúdos e fique por dentro de tudo!
+            <Translate content="socialMediasSubtitle" />
           </span>
         </div>
       </div>
       <div className="all-rights">
-        <span>2020 @DoceAçucarado - Todos os direitos reservados</span>
+        <span><Translate content="rightsReserved" /></span>
       </div>
     </div>
   );

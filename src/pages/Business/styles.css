@@ -1,0 +1,90 @@
+#businessPage {
+    height: 100vh;
+    position: relative;
+  
+    overflow-x: hidden;
+    background: #f0f0f5;
+  }
+  
+  #businessPage .initial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #businessPage .initial-container .author-container {
+    display: flex;
+    width: 50%;
+    height: 140px;
+    padding: 18px; 
+    margin-bottom: 10px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Lobn6-OMIqT15n31mD6daFaJhPAZh4EN8A&usqp=CAU   )
+  }
+
+  #businessPage .initial-container .author-container .image-profile {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+
+  #businessPage .initial-container .author-container .developer-description {
+    display: flex;
+    margin-left: 2%;
+    margin-top: 7%;
+    width: 100%;
+  
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  #businessPage .initial-container .author-container .post-description {
+    display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 100%;
+  
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+  
+  #businessPage .initial-container .title {
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  #businessPage .initial-container img {
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  #businessPage .report-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 315px;
+    text-align: justify;
+  }
+
+  #businessPage .report-container .report-title{
+    font-size: 35px;
+    font-family: OpenSans Condensed;
+  }
+
+  #businessPage .report-container b {
+    font-size: 35px;
+    font-family: OpenSans Condensed;
+  }
+
+  #businessPage .report-container p {
+    font-size: 18px;
+    font-family: OpenSans Condensed;
+    letter-spacing: 0.25px;
+  }
+
+  #businessPage .report-container img {
+    width: 100%;
+    border-radius: 5px;
+  }

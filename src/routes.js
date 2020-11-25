@@ -7,6 +7,7 @@ import Register from './pages/Register';
 import CreateRecipe from './pages/CreateRecipe';
 import RecipeDetails from './pages/RecipeDetails';
 import Partnerships from './pages/Partnerships';
+import Business from './pages/Business';
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
       <Route component={CreateRecipe} path="/register-recipe"></Route>
       <Route component={RecipeDetails} path="/receitas"></Route>
       <Route component={Partnerships} path="/parcerias"></Route>
+      <Route component={Business} path="/negócios"></Route>
     </BrowserRouter>
   );
 };
